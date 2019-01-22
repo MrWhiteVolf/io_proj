@@ -1,0 +1,27 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.div {
+    height: 350px; width: 330px;
+    background: #b4ef8b;
+    text-align: center;
+    margin: 0px;
+    border-width: 1px;
+    border-color:  #3d8e41;
+    border-style: solid;
+    color: #3d8e41;
+    font-family: Arial;
+    font-size: 16px;
+}
+.input {
+    background: #b4ef8b; border-style: solid; border-color: #3d8e41; border-width: 1px; color: #3d8e41; margin-top: 0px; margin-bottom: 20px; text-align: right; padding-right: 4px;
+}
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

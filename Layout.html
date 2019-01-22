@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="LayoutConfig.css">
+    <script src="CalculationController.js"></script>
+    <script src="ExportController.js"></script>
+</head>
+<body>
+<title>Roots</title>
+<div class="div">
+    <p style="margin-top: 20px; margin-bottom: 20px" id="demo">ax^2 + bx + c</p>
+    a = <input type="number" width="150px" height="20px" class="input" placeholder="0.0" id="a"><br>
+    b = <input type="number" width="150px" height="20px" class="input" placeholder="0.0" id="b"><br>
+    c = <input type="number" width="150px" height="20px" class="input" placeholder="0.0" id="c">
+        <p style="margin-top: 0px;"   id="results">
+        &nbsp;
+        </p>
+    <input type="button" onclick="show_results(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value)" value="Oblicz miejsca zerowe" class="input" style="width: 200px; height: 40px; text-align: center; margin-bottom: 10px">
+    <input value="Eksportuj do pliku" onclick="save(solution, document.getElementById('fileName').value)" class="input" style="width: 200px; height: 40px; text-align: center; margin-bottom: 10px"><br>
+    Plik do zapisu:&nbsp;&nbsp;<input type="text" placeholder="Nazwa pliku" style="height: 20px; width: 100px" class="input" id="fileName">
+</div>
+</body>
+</html>
